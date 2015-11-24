@@ -1,0 +1,136 @@
+, *:after, *:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Arial;
+	font-size: 14px;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+/* GRID */
+.fl-left {
+	float: left;
+}
+
+.fl-right {
+	float: right;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.is-relative {
+	position: relative;
+}
+
+.row:before, .row:after, .row-nomg:before, .row-nomg:after {
+	content:"";
+	display: table ;
+	clear:both;
+}
+
+.row {
+	margin-bottom: 10px;	
+}
+
+[class*='my-cell-'] {
+	margin-right: 30px;
+	float: left;
+}
+
+[class*='my-cell-']:last-of-type {
+	margin-right: 0;
+}
+
+.my-cell-1 {
+	width: 25%;
+}
+
+.my-cell-2 {
+	width: 33.3333%;
+}
+
+.my-cell-3 {
+	width: 66.6666%;
+}
+
+.my-cell-4 {
+	width: 75%;
+}
+
+.my-cell-5 {
+	width: 50%;
+}
+
+.my-cell-6 {
+	width: 100%;
+}
+
+.my-container {
+	margin: 0 auto;
+	width: 1170px;
+}
+
+/* HEADER */
+
+.right-corner *:not(div) {
+	display: inline;
+}
+
+/* NAVIGATION */
+
+.top-nav {
+	background: rgba(0, 0, 0, 0.7);
+	color: #ffffff;
+	text-transform: uppercase;
+}
+
+.top-nav-li {
+	list-style-type: none;
+}
+
+.top-nav-li li {
+	display: inline-block;
+	padding: 0 5px;
+}
+
+
+[class*='text-up'] {
+	text-transform: uppercase;
+	line-height: 0;
+}
+
+.text-up-b {
+	font-weight: bold;
+}
+
+.text-up-l {
+	font-size: 10px;
+}
+
+.info {
+	background: #e6e6e6;
+	color: #666666;
+}
+
+.info div > div {
+	padding: 10px 0;
+}
