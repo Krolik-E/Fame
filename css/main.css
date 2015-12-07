@@ -86,7 +86,7 @@ a {
 
 .my-container {
 	margin: 0 auto;
-	width: 1170px;
+	max-width: 1170px;
 }
 
 /* HEADER */
@@ -103,15 +103,18 @@ a {
 	text-transform: uppercase;
 }
 
-.top-nav-li {
-	list-style-type: none;
-}
-
 .top-nav-li li {
 	display: inline-block;
-	padding: 0 5px;
+	padding: 0 10px;
 }
 
+.top-nav-li:last-child {
+	border-right: 1px dotted #ffffff;
+}
+
+.top-nav-li:first-child:last-child {
+	border: none;
+}
 
 [class*='text-up'] {
 	text-transform: uppercase;

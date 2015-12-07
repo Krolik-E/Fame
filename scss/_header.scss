@@ -1,0 +1,49 @@
+.top-head {
+	.fl-cell-2 {
+		.cont-number {
+			@include text-st(25px);
+
+			margin: 0 30px;
+			margin-bottom: 5px;
+
+			.city-code {
+				color: $text-color;
+			}
+		}
+
+		.make-call {
+			@include text-st(20px);
+
+			border-bottom: 1px dashed $main-color;
+			margin-bottom: 5px;
+		}
+	}
+
+	.row {
+		align-items: flex-end;
+	}
+
+	.fl-cell-1 {
+
+		.row {
+			justify-content: flex-end;
+
+
+			&:first-of-type {
+				margin-bottom: 15px;
+				color: $text-color;
+			}
+
+			.border-r-dot {
+				padding-right: 5px;
+				border-right: 1px dotted $text-color;
+				margin-right: 5px;
+			}
+
+			.fa-shopping-basket {
+				color: $sec-color;
+			}
+		}
+		
+	}
+}

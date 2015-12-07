@@ -6,75 +6,105 @@
 	<title>Test buttons</title>
 
 	<!-- CSS -->
-	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/app.css">
 </head>
 <body>
 
-	<header class="my-container top-head">
-		<div class="row">
-			<div class="my-cell-6">
-				<a href="http://beta.fame.ua"><img src="img/logo.svg" alt="FAME logo" class="fl-left"></a>
-				<p class="fl-left"><span>(044)</span> 233 77 06</p>
-				<p class="fl-left">Перезвоните мне</p>
-				<div class="row fl-right right-corner">
-					<a href="http://beta.fame.ua/contacts/">Контакты и время работы</a>
-					<p>Вход</p>
-					<div class="row text-right">
-						<a href="">Корзина</a>
-					</div>
-				</div>
+	<header class="my-container row top-head">
+		<div class="fl-cell-2 row">
+			<a href="http://beta.fame.ua"><img src="img/logo.svg" alt="FAME logo"></a>
+			<p class="cont-number"><span class="city-code">(044)</span> 233 77 06</p>
+			<a href="" class="make-call">Перезвоните мне</a>
+		</div>
+		<div class="fl-cell-1">
+			<div class="row">
+				<a href="http://beta.fame.ua/contacts/" class="border-r-dot">Контакты и время работы</a>
+				<a href="">Вход</a>
+			</div>
+			<div class="row">
+				<a href=""><i class="fa fa-shopping-basket fa-2x"></i> Корзина</a>
 			</div>
 		</div>
 	</header>
 
-	<nav class="my-container top-nav">
-		<div class="row-nomg">
-			<div class="my-cell-2">
+	<nav class="my-container row top-nav">
+			<div class="fl-cell-1">
 				<ul class="top-nav-li">
-					<li><img src="img/home.png"></li>
-					<li>Женский каталог</li>
-					<li>Женские акции</li>
+					<li><a href=""><i class="fa fa-home"></i></a></li>
+					<li><a href="">Женский каталог</a></li>
+					<li><a href="">Женские акции</a></li>
 				</ul>
 			</div>
-			<div class="my-cell-2">
+			<div class="fl-cell-1">
 				<ul class="top-nav-li">
-					<li>Мужское</li>
+					<li><a href="">Мужское</a></li>
 				</ul>
 			</div>
-			<div class="my-cell-1 text-right">
+			<div class="fl-cell-1 row">
 				<a href="http://beta.fame.ua/blog/">Блог</a>
 			</div>
 		</div>
 	</nav>
 
-	<div class="info my-container">
-		<div class="row">
-			<div class="my-cell-2 text-center">
+	<div class="my-container row info">
+			<div class="fl-cell-1 row">
 				<p class="text-up-b">БРЕНДЫ НА FAME — НАСТОЯЩИЕ</p>
 				<p class="text-up-l">ВСЕ РЕПЛИКИ ПОМЕЧАЮТСЯ ОТДЕЛЬНО</p>
 			</div>
-			<div class="my-cell-2 text-center">
+			<div class="fl-cell-1 row">
 				<a href=""><p class="text-up-b">Не подошло? Верни!</p><p class="text-up-l">В течение 2 недель после доставки</p></a>
+			</div>
+			<div class="fl-cell-1">
 			</div>
 		</div>
 	</div>
 
-	<div class="my-container breadcrumb">
-		<div class="row">
-			
+	<div class="my-container row breadcrumb">
+		<ul class="breadcr">
+			<li>Главная</li>
+			<li class="active-section">Женский каталог</li>
+		</ul>
+	</div>
+
+	<div class="my-container row">
+		<div class="fl-cell-1 filter">
+			<form>
+				<button type="reset">очистить фильтры</button>
+				<section>
+					<h2>Каталог</h2>
+
+				</section>
+				<section>
+					<h2>Бренды</h2>
+
+				</section>
+				<section>
+					<h2>Размеры</h2>
+
+				</section>
+				<section>
+					<h2>Цена</h2>
+
+				</section>
+			</form>
+		</div>
+		<div class="fl-cell-4 items">
+			<div class="section-img">
+				<h3>Футболки, майки, топы</h3>
+				<ul class="section-menu">
+					<li>Блузы</li>
+					<li>Майки</li>
+					<li>Топы</li>
+					<li>Футболки</li>
+					<li>С ринтом</li>
+					<li>Все футболки, майки, топы</li>
+				</ul>
+			</div>
 		</div>
 	</div>
 
-	<div>
-		<div>
-			
-		</div>
-		<div>
-			
-		</div>
-	</div>
-
-	<footer>
+	<footer class="my-container row foot">
 		
 	</footer>
 
