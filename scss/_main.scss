@@ -52,6 +52,12 @@ ul {
 	flex-grow: 4;
 }
 
+.float-fix {
+	content: "";
+	display: table;
+	clear: both;
+}
+
 @mixin text-st($size, $weight: normal, $transform: none) {
 	font-size: ($size/16px)*1rem;
 	font-weight: $weight;

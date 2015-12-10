@@ -1,0 +1,23 @@
+.banner {
+	border: 1px solid $main-color;
+	padding: 30px 30px;
+	background: url(../img/banner.jpg) no-repeat;
+	background-size: cover;
+
+	h3 {
+		@include text-st(25px, 600);
+
+		color: $text-color;
+		margin-bottom: 30px;
+	}
+
+	.section-menu {
+
+		li {
+			padding-right: 15px;
+			line-height: 20px;
+			float: left;
+			width: 50%;
+		}
+	}
+}

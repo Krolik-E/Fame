@@ -1,97 +1,271 @@
-/*
-Syntax error: Invalid CSS after "		.section-menu": expected "{", was "}"
-        on line 11 of D:/Fame/scss/_items.scss
-        from line 6 of D:/Fame/scss/app.scss
+/* COLORS */
+/* FONT */
+/* line 1, ../scss/_main.scss */
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-Backtrace:
-D:/Fame/scss/_items.scss:11
-D:/Fame/scss/app.scss:6
-D:/Program Files/Scout/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:1129:in `expected'
-D:/Program Files/Scout/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:1066:in `expected'
-D:/Program Files/Scout/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:1061:in `tok!'
-D:/Program Files/Scout/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:517:in `block'
-D:/Program Files/Scout/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:512:in `ruleset'
-D:/Program Files/Scout/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:574:in `declaration_or_ruleset'
-org/jruby/RubyProc.java:268:in `call'
-org/jruby/RubyProc.java:228:in `call'
-D:/Program Files/Scout/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:1104:in `rethrow'
-D:/Program Files/Scout/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:575:in `declaration_or_ruleset'
-D:/Program Files/Scout/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:537:in `block_child'
-D:/Program Files/Scout/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:529:in `block_contents'
-D:/Program Files/Scout/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:518:in `block'
-D:/Program Files/Scout/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:512:in `ruleset'
-D:/Program Files/Scout/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:574:in `declaration_or_ruleset'
-org/jruby/RubyProc.java:268:in `call'
-org/jruby/RubyProc.java:228:in `call'
-D:/Program Files/Scout/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:1104:in `rethrow'
-D:/Program Files/Scout/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:575:in `declaration_or_ruleset'
-D:/Program Files/Scout/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:537:in `block_child'
-D:/Program Files/Scout/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:526:in `block_contents'
-D:/Program Files/Scout/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:518:in `block'
-D:/Program Files/Scout/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:512:in `ruleset'
-D:/Program Files/Scout/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:536:in `block_child'
-D:/Program Files/Scout/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:526:in `block_contents'
-D:/Program Files/Scout/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:70:in `stylesheet'
-D:/Program Files/Scout/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:27:in `parse'
-D:/Program Files/Scout/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/engine.rb:342:in `_to_tree'
-D:/Program Files/Scout/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/engine.rb:272:in `to_tree'
-D:/Program Files/Scout/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:222:in `visit_import'
-org/jruby/RubyKernel.java:2096:in `send'
-D:/Program Files/Scout/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-D:/Program Files/Scout/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:98:in `visit'
-D:/Program Files/Scout/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
-org/jruby/RubyArray.java:2336:in `collect'
-D:/Program Files/Scout/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
-D:/Program Files/Scout/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:107:in `visit_children'
-D:/Program Files/Scout/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:119:in `with_environment'
-D:/Program Files/Scout/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:106:in `visit_children'
-D:/Program Files/Scout/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-D:/Program Files/Scout/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:126:in `visit_root'
-org/jruby/RubyKernel.java:2096:in `send'
-D:/Program Files/Scout/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-D:/Program Files/Scout/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:98:in `visit'
-org/jruby/RubyKernel.java:2096:in `send'
-D:/Program Files/Scout/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:7:in `visit'
-D:/Program Files/Scout/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/root_node.rb:20:in `render'
-D:/Program Files/Scout/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/engine.rb:315:in `_render'
-D:/Program Files/Scout/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/engine.rb:262:in `render'
-D:/Program Files/Scout/Scout/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:140:in `compile'
-D:/Program Files/Scout/Scout/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
-D:/Program Files/Scout/Scout/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:139:in `compile'
-D:/Program Files/Scout/Scout/vendor/gems/gems/compass-0.12.2/lib/compass/logger.rb:45:in `red'
-D:/Program Files/Scout/Scout/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:138:in `compile'
-D:/Program Files/Scout/Scout/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:118:in `compile_if_required'
-D:/Program Files/Scout/Scout/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:103:in `run'
-org/jruby/RubyArray.java:1603:in `each'
-D:/Program Files/Scout/Scout/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `run'
-D:/Program Files/Scout/Scout/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
-D:/Program Files/Scout/Scout/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:100:in `run'
-D:/Program Files/Scout/Scout/vendor/gems/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:147:in `recompile'
-org/jruby/RubyMethod.java:133:in `call'
-org/jruby/RubyProc.java:268:in `call'
-org/jruby/RubyProc.java:228:in `call'
-D:/Program Files/Scout/Scout/vendor/gems/gems/fssm-0.2.9/lib/fssm/path.rb:73:in `run_callback'
-D:/Program Files/Scout/Scout/vendor/gems/gems/fssm-0.2.9/lib/fssm/path.rb:55:in `callback_action'
-D:/Program Files/Scout/Scout/vendor/gems/gems/fssm-0.2.9/lib/fssm/path.rb:35:in `update'
-D:/Program Files/Scout/Scout/vendor/gems/gems/fssm-0.2.9/lib/fssm/state/directory.rb:39:in `modified'
-org/jruby/RubyArray.java:1603:in `each'
-D:/Program Files/Scout/Scout/vendor/gems/gems/fssm-0.2.9/lib/fssm/state/directory.rb:37:in `modified'
-D:/Program Files/Scout/Scout/vendor/gems/gems/fssm-0.2.9/lib/fssm/state/directory.rb:18:in `refresh'
-D:/Program Files/Scout/Scout/vendor/gems/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `run'
-org/jruby/RubyArray.java:1603:in `each'
-D:/Program Files/Scout/Scout/vendor/gems/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `run'
-org/jruby/RubyKernel.java:1419:in `loop'
-D:/Program Files/Scout/Scout/vendor/gems/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:15:in `run'
-D:/Program Files/Scout/Scout/vendor/gems/gems/fssm-0.2.9/lib/fssm/monitor.rb:26:in `run'
-D:/Program Files/Scout/Scout/vendor/gems/gems/fssm-0.2.9/lib/fssm.rb:70:in `monitor'
-D:/Program Files/Scout/Scout/vendor/gems/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:87:in `perform'
-D:/Program Files/Scout/Scout/vendor/gems/gems/compass-0.12.2/lib/compass/commands/base.rb:18:in `execute'
-D:/Program Files/Scout/Scout/vendor/gems/gems/compass-0.12.2/lib/compass/commands/project_base.rb:19:in `execute'
-D:/Program Files/Scout/Scout/vendor/gems/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
-D:/Program Files/Scout/Scout/vendor/gems/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-D:\Program Files\Scout\Scout\bin\compass:12:in `(root)'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Invalid CSS after \"		.section-menu\": expected \"{\", was \"}\"\A         on line 11 of D:/Fame/scss/_items.scss\A         from line 6 of D:/Fame/scss/app.scss"; }
+/* line 9, ../scss/_main.scss */
+body {
+  font: 14px sans-serif;
+  color: black;
+  margin-top: 15px;
+}
+
+/* line 15, ../scss/_main.scss */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* line 20, ../scss/_main.scss */
+ul {
+  list-style-type: none;
+}
+
+/* GRID */
+/* line 26, ../scss/_main.scss */
+.my-container {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+/* line 31, ../scss/_main.scss */
+.row {
+  display: flex;
+}
+
+/* line 35, ../scss/_main.scss */
+[class*="fl-cell-"] {
+  flex-basis: 0;
+}
+
+/* line 39, ../scss/_main.scss */
+.fl-cell-1 {
+  flex-grow: 1;
+}
+
+/* line 43, ../scss/_main.scss */
+.fl-cell-2 {
+  flex-grow: 2;
+}
+
+/* line 47, ../scss/_main.scss */
+.fl-cell-3 {
+  flex-grow: 3;
+}
+
+/* line 51, ../scss/_main.scss */
+.fl-cell-4 {
+  flex-grow: 4;
+}
+
+/* line 55, ../scss/_main.scss */
+.float-fix {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 3, ../scss/_header.scss */
+.top-head .fl-cell-2 .cont-number {
+  font-size: 1.25rem;
+  font-weight: normal;
+  text-transform: none;
+  margin: 0 30px;
+  margin-bottom: 5px;
+}
+/* line 9, ../scss/_header.scss */
+.top-head .fl-cell-2 .cont-number .city-code {
+  color: #666666;
+}
+/* line 14, ../scss/_header.scss */
+.top-head .fl-cell-2 .make-call {
+  font-size: 1.125rem;
+  font-weight: normal;
+  text-transform: none;
+  border-bottom: 1px dashed black;
+  margin-bottom: 5px;
+}
+/* line 22, ../scss/_header.scss */
+.top-head .row {
+  align-items: flex-end;
+}
+/* line 28, ../scss/_header.scss */
+.top-head .fl-cell-1 .row {
+  justify-content: flex-end;
+}
+/* line 32, ../scss/_header.scss */
+.top-head .fl-cell-1 .row:first-of-type {
+  margin-bottom: 15px;
+  color: #666666;
+}
+/* line 37, ../scss/_header.scss */
+.top-head .fl-cell-1 .row .border-r-dot {
+  padding-right: 5px;
+  border-right: 1px dotted #666666;
+  margin-right: 5px;
+}
+/* line 43, ../scss/_header.scss */
+.top-head .fl-cell-1 .row .fa-shopping-basket {
+  color: #c20067;
+}
+
+/* line 1, ../scss/_nav.scss */
+.top-nav {
+  font-size: 0.8125rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  background: black;
+  opacity: 0.7;
+  color: white;
+  margin-top: 10px;
+  padding: 10px;
+}
+/* line 10, ../scss/_nav.scss */
+.top-nav .fl-cell-1:first-of-type {
+  border-right: 1px dotted white;
+}
+/* line 14, ../scss/_nav.scss */
+.top-nav .top-nav-li li {
+  display: inline-block;
+  padding: 0 15px;
+}
+/* line 19, ../scss/_nav.scss */
+.top-nav .fl-cell-1:last-of-type {
+  justify-content: flex-end;
+}
+
+/* line 25, ../scss/_nav.scss */
+.info {
+  background: #f0f0f0;
+  color: #666666;
+  padding: 10px;
+  justify-content: center;
+}
+/* line 31, ../scss/_nav.scss */
+.info .fl-cell-1 {
+  flex-direction: column;
+  border-right: 1px solid #666666;
+  align-items: center;
+}
+/* line 38, ../scss/_nav.scss */
+.info .fl-cell-2 a {
+  padding-left: 10%;
+  text-align: center;
+}
+/* line 44, ../scss/_nav.scss */
+.info .text-up-b {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+/* line 48, ../scss/_nav.scss */
+.info .text-up-l {
+  font-size: 0.625rem;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+/* line 53, ../scss/_nav.scss */
+.breadcrumb {
+  padding: 5px 0;
+}
+/* line 56, ../scss/_nav.scss */
+.breadcrumb .breadcr li {
+  font-size: 0.75rem;
+  font-weight: normal;
+  text-transform: none;
+  float: left;
+}
+/* line 62, ../scss/_nav.scss */
+.breadcrumb .breadcr li + li:before {
+  padding: 0 5px;
+  content: '>';
+  color: black;
+}
+/* line 68, ../scss/_nav.scss */
+.breadcrumb .breadcr .active-section {
+  color: #666666;
+}
+
+/* line 2, ../scss/_filter.scss */
+.filter h2 {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #666666;
+}
+
+/* line 1, ../scss/_sort.scss */
+.sort {
+  font-size: 0.625rem;
+  font-weight: normal;
+  text-transform: none;
+  margin-top: 20px;
+}
+/* line 7, ../scss/_sort.scss */
+.sort a {
+  text-decoration: underline;
+}
+/* line 11, ../scss/_sort.scss */
+.sort .sort-by-delivery {
+  flex-direction: column;
+}
+/* line 14, ../scss/_sort.scss */
+.sort .sort-by-delivery .items-quantity {
+  float: left;
+  padding-right: 10px;
+  margin-right: 10px;
+  border-right: 1px solid black;
+  font-weight: 600;
+}
+/* line 23, ../scss/_sort.scss */
+.sort .sort-by-price {
+  text-align: right;
+}
+/* line 26, ../scss/_sort.scss */
+.sort .sort-by-price a:first-of-type {
+  padding-right: 20px;
+}
+
+/* line 1, ../scss/_banner.scss */
+.banner {
+  border: 1px solid black;
+  padding: 30px 30px;
+  background: url(../img/banner.jpg) no-repeat;
+  background-size: cover;
+}
+/* line 7, ../scss/_banner.scss */
+.banner h3 {
+  font-size: 1.5625rem;
+  font-weight: 600;
+  text-transform: none;
+  color: #666666;
+  margin-bottom: 30px;
+}
+/* line 16, ../scss/_banner.scss */
+.banner .section-menu li {
+  padding-right: 15px;
+  line-height: 20px;
+  float: left;
+  width: 50%;
+}
+
+/* line 2, ../scss/_items.scss */
+.items .section-img {
+  border: 1px solid #666666;
+}
+/* line 5, ../scss/_items.scss */
+.items .section-img h3 {
+  color: #666666;
+  margin-bottom: 50px;
+}
+/* line 10, ../scss/_items.scss */
+.items .section-img .section-menu {
+  color: black;
+}

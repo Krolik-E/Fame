@@ -26,19 +26,23 @@
 	background: $main-add-color;
 	color: $text-color;
 	padding: 10px;
+	justify-content: center;
 
-	.row {
-		justify-content: center;
+	.fl-cell-1 {
+		flex-direction: column;
+		border-right: 1px solid $text-color;
+		align-items: center;
+	}
 
-		&:first-of-type {
-			flex-direction: column;
-			border-right: 1px solid $text-color;
-			align-items: center;
+	.fl-cell-2 {
+		a {
+			padding-left: 10%;
+			text-align: center;
 		}
 	}
 
 	.text-up-b {
-		@include text-st(14px, 600, uppercase);
+		@include text-st(12px, 600, uppercase);
 	}
 
 	.text-up-l {
@@ -52,7 +56,7 @@
 		li {
 			@include text-st(12px);
 
-			display: inline;
+			float: left;
 		}
 
 		li + li:before {

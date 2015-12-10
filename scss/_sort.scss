@@ -1,0 +1,30 @@
+.sort {
+
+	@include text-st(10px);
+
+	margin-top: 20px;
+
+	a {
+		text-decoration: underline;
+	}
+
+	.sort-by-delivery {
+		flex-direction: column;
+
+		.items-quantity {
+			float: left;
+			padding-right: 10px;
+			margin-right: 10px;
+			border-right: 1px solid $main-color;
+			font-weight: 600;
+		}
+	}
+
+	.sort-by-price {
+		text-align: right;
+
+		a:first-of-type {
+			padding-right: 20px;
+		}
+	}
+}
