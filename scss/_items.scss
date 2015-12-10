@@ -1,16 +1,15 @@
 .items {
-	.section-img {
-		border: 1px solid $text-color;
 
-		h3 {
-			color: $text-color;
-			margin-bottom: 50px;
+	margin-bottom: 30px;
+
+	.fl-cell-1 {
+		margin-right: 20px;
+		border: 1px solid $main-color;
+
+		&:last-of-type{
+			margin-right: 0;
 		}
 
-		.section-menu {
-			color: $main-color;
-		}
+
 	}
-
-	
 }

@@ -1,10 +1,11 @@
 .top-head {
+	
 	.fl-cell-2 {
-		.cont-number {
-			@include text-st(20px);
 
-			margin: 0 30px;
-			margin-bottom: 5px;
+		.cont-number {
+			@include text-st(25px);
+
+			margin: 0 30px 5px;
 
 			.city-code {
 				color: $text-color;

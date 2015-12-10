@@ -13,7 +13,7 @@
 body {
   font: 14px sans-serif;
   color: black;
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 /* line 15, ../scss/_main.scss */
@@ -71,19 +71,18 @@ ul {
   clear: both;
 }
 
-/* line 3, ../scss/_header.scss */
+/* line 5, ../scss/_header.scss */
 .top-head .fl-cell-2 .cont-number {
-  font-size: 1.25rem;
+  font-size: 1.5625rem;
   font-weight: normal;
   text-transform: none;
-  margin: 0 30px;
-  margin-bottom: 5px;
+  margin: 0 30px 5px;
 }
-/* line 9, ../scss/_header.scss */
+/* line 10, ../scss/_header.scss */
 .top-head .fl-cell-2 .cont-number .city-code {
   color: #666666;
 }
-/* line 14, ../scss/_header.scss */
+/* line 15, ../scss/_header.scss */
 .top-head .fl-cell-2 .make-call {
   font-size: 1.125rem;
   font-weight: normal;
@@ -91,26 +90,26 @@ ul {
   border-bottom: 1px dashed black;
   margin-bottom: 5px;
 }
-/* line 22, ../scss/_header.scss */
+/* line 23, ../scss/_header.scss */
 .top-head .row {
   align-items: flex-end;
 }
-/* line 28, ../scss/_header.scss */
+/* line 29, ../scss/_header.scss */
 .top-head .fl-cell-1 .row {
   justify-content: flex-end;
 }
-/* line 32, ../scss/_header.scss */
+/* line 33, ../scss/_header.scss */
 .top-head .fl-cell-1 .row:first-of-type {
   margin-bottom: 15px;
   color: #666666;
 }
-/* line 37, ../scss/_header.scss */
+/* line 38, ../scss/_header.scss */
 .top-head .fl-cell-1 .row .border-r-dot {
   padding-right: 5px;
   border-right: 1px dotted #666666;
   margin-right: 5px;
 }
-/* line 43, ../scss/_header.scss */
+/* line 44, ../scss/_header.scss */
 .top-head .fl-cell-1 .row .fa-shopping-basket {
   color: #c20067;
 }
@@ -175,20 +174,20 @@ ul {
 .breadcrumb {
   padding: 5px 0;
 }
-/* line 56, ../scss/_nav.scss */
+/* line 57, ../scss/_nav.scss */
 .breadcrumb .breadcr li {
   font-size: 0.75rem;
   font-weight: normal;
   text-transform: none;
   float: left;
 }
-/* line 62, ../scss/_nav.scss */
+/* line 63, ../scss/_nav.scss */
 .breadcrumb .breadcr li + li:before {
   padding: 0 5px;
   content: '>';
   color: black;
 }
-/* line 68, ../scss/_nav.scss */
+/* line 69, ../scss/_nav.scss */
 .breadcrumb .breadcr .active-section {
   color: #666666;
 }
@@ -206,7 +205,7 @@ ul {
   font-size: 0.625rem;
   font-weight: normal;
   text-transform: none;
-  margin-top: 20px;
+  margin: 20px 0;
 }
 /* line 7, ../scss/_sort.scss */
 .sort a {
@@ -245,7 +244,7 @@ ul {
   font-size: 1.5625rem;
   font-weight: 600;
   text-transform: none;
-  color: #666666;
+  color: #c20067;
   margin-bottom: 30px;
 }
 /* line 16, ../scss/_banner.scss */
@@ -256,16 +255,63 @@ ul {
   width: 50%;
 }
 
-/* line 2, ../scss/_items.scss */
-.items .section-img {
-  border: 1px solid #666666;
+/* line 1, ../scss/_items.scss */
+.items {
+  margin-bottom: 30px;
 }
 /* line 5, ../scss/_items.scss */
-.items .section-img h3 {
-  color: #666666;
-  margin-bottom: 50px;
+.items .fl-cell-1 {
+  margin-right: 20px;
+  border: 1px solid black;
 }
-/* line 10, ../scss/_items.scss */
-.items .section-img .section-menu {
-  color: black;
+/* line 9, ../scss/_items.scss */
+.items .fl-cell-1:last-of-type {
+  margin-right: 0;
+}
+
+/* line 1, ../scss/_foot.scss */
+.foot {
+  background: #f0f0f0;
+  padding: 15px 0 50px;
+}
+/* line 5, ../scss/_foot.scss */
+.foot .fl-cell-1 {
+  margin-right: 40px;
+}
+/* line 8, ../scss/_foot.scss */
+.foot .fl-cell-1:last-of-type {
+  margin-right: 0;
+}
+/* line 12, ../scss/_foot.scss */
+.foot .fl-cell-1 h5 {
+  color: #333333;
+  line-height: 30px;
+  border-bottom: 1px solid #666666;
+  margin-bottom: 10px;
+}
+/* line 19, ../scss/_foot.scss */
+.foot .fl-cell-1 .foot-menu {
+  font-size: 0.75rem;
+  font-weight: normal;
+  text-transform: none;
+  color: #666666;
+  line-height: 16px;
+}
+/* line 26, ../scss/_foot.scss */
+.foot .fl-cell-1 .foot-menu-social {
+  margin-top: 10px;
+}
+/* line 29, ../scss/_foot.scss */
+.foot .fl-cell-1 .foot-menu-social li {
+  float: left;
+  margin-right: 10px;
+}
+/* line 33, ../scss/_foot.scss */
+.foot .fl-cell-1 .foot-menu-social li:last-of-type {
+  margin-right: 0;
+}
+/* line 37, ../scss/_foot.scss */
+.foot .fl-cell-1 .foot-menu-social li a img {
+  width: 30px;
+  height: 30px;
 }

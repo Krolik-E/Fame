@@ -1,0 +1,45 @@
+.foot {
+	background: $main-add-color;
+	padding: 15px 0 50px;
+
+	.fl-cell-1 {
+		margin-right: 40px;
+
+		&:last-of-type{
+			margin-right: 0;
+		}
+
+		h5 {
+			color: lighten($main-color, 20%);
+			line-height: 30px;
+			border-bottom: 1px solid $text-color;
+			margin-bottom: 10px;
+		}
+
+		.foot-menu {
+			@include text-st(12px);
+
+			color: $text-color;
+			line-height: 16px;
+		}
+
+		.foot-menu-social {
+			margin-top: 10px;
+
+			li {
+				float: left;
+				margin-right: 10px;
+
+				&:last-of-type {
+					margin-right: 0;
+				}
+
+				a img {
+					width: 30px;
+					height: 30px;
+				}
+				
+			}
+		}
+	}
+}
