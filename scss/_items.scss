@@ -3,13 +3,156 @@
 	margin-bottom: 30px;
 
 	.fl-cell-1 {
-		margin-right: 20px;
-		border: 1px solid $main-color;
+		margin: 0 10px;
+		position: relative;
+
+
+		&:first-of-type {
+			margin-left: 0;
+		}
 
 		&:last-of-type{
 			margin-right: 0;
 		}
 
+		.item {
+			position: relative;
+			border: 1px solid $title-color;
+			
 
+			.img-placeholder {
+				height: 450px;
+				background-image: url(../img/item.jpeg);
+				background-size: cover;
+				text-align: center;
+				margin-bottom: 10px;
+				position: relative;
+
+				.to-shopping-box {
+					background: linear-gradient(#E86DB7, #ba3079);
+					border: none;
+					text-transform: uppercase;
+					color: $title-color;
+					padding: 10px 40px;
+					border-radius: 5px;
+					position: absolute;
+					top: 70%;
+					left: 50%;
+					transform: translate(-50%, 0);
+					white-space: nowrap;
+					z-index: 0;
+					opacity: 0;
+				}
+
+				.item-fast-delivery {
+					position: absolute;
+					bottom: 0;
+					left: 50%;
+					transform: translate(-50%, 0);
+					width: 100%;
+					text-align: left;
+
+					.item-fast-delivery-icn {
+						min-width: 30px;
+						min-height: 30px;
+						background: rgba(255, 255, 255, 0.5) url(../img/clock.png) no-repeat center center;
+						background-size: 15px;
+						float: left;
+						margin-right: 5px;						
+					}
+
+					.item-delivery-term {
+						@include text-st(12px);
+						
+						z-index: 0;
+						opacity: 0;
+					}
+
+				}
+			}
+
+			.item-info {
+				min-height: 80px;
+				position: relative;
+
+				.item-brand {
+					@include text-st(16px);
+					margin-bottom: 5px;
+				}
+
+				.item-description{
+					color: $text-color;
+					margin-bottom: 10px;
+				}
+
+				.item-price {
+					@include text-st(16px, 600);
+
+					position: absolute;
+					bottom: 0;
+					color: $sec-color;
+
+					.item-old-price {
+						@include text-st(12px, 400);
+
+						color: $text-color;
+						text-decoration: line-through;
+						padding-left: 10px;
+					}
+				}
+			}
+
+			.item-size {
+				@include text-st(16px, 600);
+
+				color: $sec-color;
+				z-index: 0;
+				opacity: 0;
+
+				.item-sizes {
+					@include text-st(12px, 600);
+
+					color: $main-color;
+				}
+			}
+			
+		}
+
+		&:hover {
+			.item {
+				border: 1px solid $text-color;
+
+				.to-shopping-box {
+					z-index: 1;
+					opacity: 1;
+				}
+
+				.item-fast-delivery {
+					background-color: rgba(255, 255, 255, 0.7);
+
+					.item-fast-delivery-icn {
+						background-color: initial;
+					}
+
+					.item-delivery-term {
+						z-index: 1;
+						opacity: 1;
+					}
+				}
+
+				.item-size {
+					z-index: 1;
+					opacity: 1;
+				}
+			}
+		}
 	}
+}
+
+.item-next-img {
+		
+}
+
+.item-prev-img {
+	@extend .item-next-img;
 }

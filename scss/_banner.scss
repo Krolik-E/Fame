@@ -4,7 +4,7 @@
 	background: url(../img/banner.jpg) no-repeat;
 	background-size: cover;
 
-	h3 {
+	h1 {
 		@include text-st(25px, 600);
 
 		color: $sec-color;

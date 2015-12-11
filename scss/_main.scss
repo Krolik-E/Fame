@@ -21,6 +21,10 @@ ul {
 	list-style-type: none;
 }
 
+button {
+	cursor: pointer;
+}
+
 /* GRID */
 
 .my-container {
@@ -49,7 +53,7 @@ ul {
 }
 
 .fl-cell-4 {
-	flex-grow: 4;
+	flex-grow: 5;
 }
 
 .float-fix {
