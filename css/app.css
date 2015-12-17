@@ -304,6 +304,63 @@ button {
   opacity: 0;
 }
 /* line 42, ../scss/_items.scss */
+.items .fl-cell-1 .item .img-placeholder .buttons {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 0;
+  opacity: 0;
+}
+/* line 50, ../scss/_items.scss */
+.items .fl-cell-1 .item .img-placeholder .buttons .quick-view {
+  background: linear-gradient(#e86db7, #ba3079);
+  border: none;
+  text-transform: uppercase;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  margin-right: 5px;
+  flex-basis: 0;
+  flex-grow: 1;
+}
+/* line 62, ../scss/_items.scss */
+.items .fl-cell-1 .item .img-placeholder .buttons .to-shop-box {
+  background: linear-gradient(#70509b, #42226d);
+  border: none;
+  text-transform: uppercase;
+  color: white;
+  border-radius: 5px;
+  margin-right: 5px;
+  padding: 10px;
+  flex-basis: 0;
+  flex-grow: 1;
+}
+/* line 74, ../scss/_items.scss */
+.items .fl-cell-1 .item .img-placeholder .buttons .to-wishlist {
+  background: linear-gradient(#fc92b7, #ce6489);
+  border: none;
+  text-transform: uppercase;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  flex-basis: 0;
+  flex-grow: 1;
+}
+/* line 86, ../scss/_items.scss */
+.items .fl-cell-1 .item .img-placeholder .to-wish {
+  background: linear-gradient(#e86db7, #ba3079);
+  border: none;
+  color: white;
+  border-radius: 50%;
+  position: absolute;
+  right: 1%;
+  top: 1%;
+  z-index: 0;
+  opacity: 0;
+  padding: 7px;
+}
+/* line 99, ../scss/_items.scss */
 .items .fl-cell-1 .item .img-placeholder .item-fast-delivery {
   position: absolute;
   bottom: 0;
@@ -312,7 +369,7 @@ button {
   width: 100%;
   text-align: left;
 }
-/* line 50, ../scss/_items.scss */
+/* line 107, ../scss/_items.scss */
 .items .fl-cell-1 .item .img-placeholder .item-fast-delivery .item-fast-delivery-icn {
   min-width: 30px;
   min-height: 30px;
@@ -321,7 +378,7 @@ button {
   float: left;
   margin-right: 5px;
 }
-/* line 59, ../scss/_items.scss */
+/* line 116, ../scss/_items.scss */
 .items .fl-cell-1 .item .img-placeholder .item-fast-delivery .item-delivery-term {
   font-size: 0.75rem;
   font-weight: normal;
@@ -329,7 +386,7 @@ button {
   z-index: 0;
   opacity: 0;
 }
-/* line 69, ../scss/_items.scss */
+/* line 126, ../scss/_items.scss */
 .items .fl-cell-1 .item .item-prev-img, .items .fl-cell-1 .item .item-next-img {
   position: absolute;
   left: -25px;
@@ -341,30 +398,30 @@ button {
   opacity: 0;
   border: none;
 }
-/* line 81, ../scss/_items.scss */
+/* line 138, ../scss/_items.scss */
 .items .fl-cell-1 .item .item-next-img {
   left: auto;
   right: -25px;
   background: rgba(0, 0, 0, 0.4) url(../img/next.png) no-repeat center center;
 }
-/* line 87, ../scss/_items.scss */
+/* line 144, ../scss/_items.scss */
 .items .fl-cell-1 .item .item-info {
   min-height: 80px;
   position: relative;
 }
-/* line 91, ../scss/_items.scss */
+/* line 148, ../scss/_items.scss */
 .items .fl-cell-1 .item .item-info .item-brand {
   font-size: 1rem;
   font-weight: normal;
   text-transform: none;
   margin-bottom: 5px;
 }
-/* line 96, ../scss/_items.scss */
+/* line 153, ../scss/_items.scss */
 .items .fl-cell-1 .item .item-info .item-description {
   color: #666666;
   margin-bottom: 10px;
 }
-/* line 101, ../scss/_items.scss */
+/* line 158, ../scss/_items.scss */
 .items .fl-cell-1 .item .item-info .item-price {
   font-size: 1rem;
   font-weight: 600;
@@ -373,7 +430,7 @@ button {
   bottom: 0;
   color: #c20067;
 }
-/* line 108, ../scss/_items.scss */
+/* line 165, ../scss/_items.scss */
 .items .fl-cell-1 .item .item-info .item-price .item-old-price {
   font-size: 0.75rem;
   font-weight: 400;
@@ -382,7 +439,7 @@ button {
   text-decoration: line-through;
   padding-left: 10px;
 }
-/* line 118, ../scss/_items.scss */
+/* line 175, ../scss/_items.scss */
 .items .fl-cell-1 .item .item-size {
   font-size: 1rem;
   font-weight: 600;
@@ -391,14 +448,14 @@ button {
   z-index: 0;
   opacity: 0;
 }
-/* line 125, ../scss/_items.scss */
+/* line 182, ../scss/_items.scss */
 .items .fl-cell-1 .item .item-size .item-sizes {
   font-size: 0.75rem;
   font-weight: 600;
   text-transform: none;
   color: black;
 }
-/* line 135, ../scss/_items.scss */
+/* line 192, ../scss/_items.scss */
 .items .fl-cell-1:hover .item-box {
   position: absolute;
   width: 117%;
@@ -408,31 +465,41 @@ button {
   box-shadow: 5px 5px 10px #666666;
   z-index: 10;
 }
-/* line 146, ../scss/_items.scss */
+/* line 203, ../scss/_items.scss */
 .items .fl-cell-1:hover .item .to-shopping-box {
   z-index: 1;
   opacity: 1;
 }
-/* line 151, ../scss/_items.scss */
+/* line 208, ../scss/_items.scss */
+.items .fl-cell-1:hover .item .buttons {
+  z-index: 1;
+  opacity: 1;
+}
+/* line 213, ../scss/_items.scss */
+.items .fl-cell-1:hover .item .to-wish {
+  z-index: 1;
+  opacity: 1;
+}
+/* line 218, ../scss/_items.scss */
 .items .fl-cell-1:hover .item .item-fast-delivery {
   background-color: rgba(255, 255, 255, 0.7);
 }
-/* line 154, ../scss/_items.scss */
+/* line 221, ../scss/_items.scss */
 .items .fl-cell-1:hover .item .item-fast-delivery .item-fast-delivery-icn {
   background-color: initial;
 }
-/* line 158, ../scss/_items.scss */
+/* line 225, ../scss/_items.scss */
 .items .fl-cell-1:hover .item .item-fast-delivery .item-delivery-term {
   z-index: 1;
   opacity: 1;
 }
-/* line 164, ../scss/_items.scss */
+/* line 231, ../scss/_items.scss */
 .items .fl-cell-1:hover .item .item-next-img, .items .fl-cell-1:hover .item .item-prev-img {
   background-color: rgba(0, 0, 0, 0.4);
   z-index: 1;
   opacity: 1;
 }
-/* line 170, ../scss/_items.scss */
+/* line 237, ../scss/_items.scss */
 .items .fl-cell-1:hover .item .item-size {
   z-index: 1;
   opacity: 1;

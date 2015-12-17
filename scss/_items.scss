@@ -39,6 +39,63 @@
 					opacity: 0;
 				}
 
+				.buttons {
+					position: absolute;
+					top: 70%;
+					left: 50%;
+					transform: translate(-50%, 0);
+					z-index: 0;
+					opacity: 0;
+
+					.quick-view {
+						background: linear-gradient(#E86DB7, #ba3079);
+						border: none;
+						text-transform: uppercase;
+						color: $title-color;
+						border-radius: 5px;
+						padding: 10px;
+						margin-right: 5px;
+						flex-basis: 0;
+						flex-grow: 1;
+					}
+
+					.to-shop-box {
+						background: linear-gradient(#70509b, #42226d);
+						border: none;
+						text-transform: uppercase;
+						color: $title-color;
+						border-radius: 5px;						
+						margin-right: 5px;
+						padding: 10px;
+						flex-basis: 0;
+						flex-grow: 1;
+					}
+
+					.to-wishlist {
+						background: linear-gradient(#fc92b7, #ce6489);
+						border: none;
+						text-transform: uppercase;
+						color: $title-color;
+						border-radius: 5px;
+						padding: 10px;
+						flex-basis: 0;
+						flex-grow: 1;
+					}
+				}
+
+				.to-wish {
+					background: linear-gradient(#E86DB7, #ba3079);
+					border: none;
+					color: $title-color;
+					border-radius: 50%;
+					position: absolute;
+					right: 1%;
+					top: 1%;
+					z-index: 0;
+					opacity: 0;
+					padding: 7px;
+				}
+
 				.item-fast-delivery {
 					position: absolute;
 					bottom: 0;
@@ -144,6 +201,16 @@
 			.item {
 
 				.to-shopping-box {
+					z-index: 1;
+					opacity: 1;
+				}
+
+				.buttons {
+					z-index: 1;
+					opacity: 1;
+				}
+
+				.to-wish {
 					z-index: 1;
 					opacity: 1;
 				}
