@@ -1,0 +1,18 @@
+include ../info/_botInfo.jade
+
+h5
+	| #{info[0].title}
+h6
+	| #{info[0].subtitle}
+each value in info[0].abstracts
+	if value.class
+		p( class=value.class )
+			| #{value.paragraph}
+	else if value.items
+		ul
+			each item in value.items
+				li
+					| #{item}
+	else
+		p
+			| #{value}

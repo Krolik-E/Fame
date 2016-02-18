@@ -1,0 +1,17 @@
+include ../info/_footerInfo.jade
+
+each val in footerMenu
+	div.fl-cell-1
+		h5
+			| #{val.title}
+		ul.footer-menu
+			each value in val.items
+				li
+					a( href='#' )
+						| #{value}
+		if val.social
+			ul.footer-menu-social
+				each value in val.social
+					li
+						a( href='#' )
+							img( src=value )

@@ -1,0 +1,25 @@
+include ../info/_navigationInfo.jade
+
+each item in menu
+	div( class='fl-cell-1 #{item.href ? "row": ""}' )
+		if item.items
+			ul.top-nav-li
+				li
+					a( href='#' )
+						i( class=item.icon )
+				each value in item.items
+					li
+						a( href='#' )
+							| #{value}
+
+		else if item.href
+			a( href=item.href )
+				| #{item.name}
+
+		else
+			ul.top-nav-li
+				li
+					a( href='#' )
+						| #{item}
+
+

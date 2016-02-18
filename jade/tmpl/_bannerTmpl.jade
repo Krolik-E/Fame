@@ -1,0 +1,10 @@
+include ../info/_bannerInfo.jade
+
+
+h1
+	| #{menu[0].title}
+ul.section-menu.float-fix
+	each value in menu[0].items
+		li
+			a( href='#' )
+				| #{value}

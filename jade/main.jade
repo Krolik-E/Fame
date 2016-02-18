@@ -1,0 +1,94 @@
+doctype
+html( lang='ru' )
+	head
+		meta( charset='utf-8' )
+		meta( name='author', description='Krolitska Eugenia' )
+		title
+			| Test buttons Fame
+		link( rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css' )
+		link( rel='stylesheet', href='css/app.css' )
+	body
+		header.my-container.row.top-head
+			div.fl-cell-2.row
+				a( href='http://beta.fame.ua' )
+					img( src='img/logo.svg', alt='FAME logo' )
+				p.cont-number
+					span.city-code (044) 
+					| 233 77 06
+				a.make-call( href='#' ) 
+					| Перезвоните мне
+			div.fl-cell-1
+				div.row
+					a.border-r-dot( href='http://beta.fame.ua/contacts/' )
+						| Контакты и время работы
+					a( href='#' )
+						| Вход
+				div.row
+					a( href='#' )
+						i.fa.fa-shopping-basket.fa-2x
+						|  Корзина
+
+		nav.my-container.row.top-nav
+			include tmpl/_navigationTmpl.jade
+
+		div.my-container.row.info
+			div.fl-cell-1.row.info-cell
+				p.text-up-b
+					| Все по-честному!
+				p.text-up-l
+					| Бренды на fame — настоящие. Все реплики помечаются отдельно
+			div.fl-cell-1.row.info-cell
+				p.text-up-b
+					| Доставка по всей Украине
+				p.text-up-l
+					| Бесплатно при заказе от 999 грн
+			div.fl-cell-1.row.info-cell
+				p.text-up-b
+					| Не подошло? Верни!
+				p.text-up-l
+					| В течение 2 недель после доставки
+
+		div.my-container.row.breadcrumbs-row
+			ul.breadcrumbs
+				li
+					a( href='#' )
+						| Главная
+				li.breadcrumb-active
+					| Женский каталог
+		div.my-container.row
+			div.fl-cell-1.filter
+				form( name='filters' )
+					button( type='reset' )
+						| очистить все фильтры
+					block sections
+
+			div.fl-cell-4.content
+				div.banner
+					include tmpl/_bannerTmpl.jade
+
+				div.row.sort
+					div.fl-cell-1.sort-by-delivery
+						p.items-quantity
+							| 271 товар
+						a( href='#' )
+							| товары с быстрой доставкой
+					div.fl-cell-1.sort-by-price
+						a( href='#' )
+							| цены по проценту скидки
+						a( href='#' )
+							| цены по убыванию
+						a( href='#' )
+							| цены по возрастанию
+
+				div.row.items
+					block items
+
+
+				div.fl-cell-1.trends-brands
+					include tmpl/_botTmpl.jade
+
+		footer.footer
+			div.my-container.row
+				include tmpl/_footerTmpl.jade
+
+		script( type='text/javascript', src='js/script.js' )
