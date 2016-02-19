@@ -1,203 +1,213 @@
 /* COLORS */
 /* FONT */
-/* line 1, ../scss/_main.scss */
 *, *:after, *:before {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* line 9, ../scss/_main.scss */
 body {
-  font: 14px sans-serif;
-  color: black;
+  font: 0.8rem sans-serif;
+  color: #000000;
   margin-top: 10px;
 }
 
-/* line 15, ../scss/_main.scss */
 a {
   text-decoration: none;
   color: inherit;
 }
 
-/* line 20, ../scss/_main.scss */
 ul {
   list-style-type: none;
 }
 
-/* line 24, ../scss/_main.scss */
 button {
   cursor: pointer;
 }
 
 /* GRID */
-/* line 30, ../scss/_main.scss */
 .my-container {
   max-width: 1120px;
   margin: 0 auto;
 }
 
-/* line 35, ../scss/_main.scss */
 .row {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
 }
 
-/* line 39, ../scss/_main.scss */
 [class*="fl-cell-"] {
-  flex-basis: 0;
+  -webkit-flex-basis: 0;
+      -ms-flex-preferred-size: 0;
+          flex-basis: 0;
 }
 
-/* line 43, ../scss/_main.scss */
 .fl-cell-1 {
-  flex-grow: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
-/* line 47, ../scss/_main.scss */
 .fl-cell-2 {
-  flex-grow: 2;
+  -webkit-flex-grow: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
 }
 
-/* line 51, ../scss/_main.scss */
 .fl-cell-3 {
-  flex-grow: 3;
+  -webkit-flex-grow: 3;
+      -ms-flex-positive: 3;
+          flex-grow: 3;
 }
 
-/* line 55, ../scss/_main.scss */
 .fl-cell-4 {
-  flex-grow: 5;
+  -webkit-flex-grow: 5;
+      -ms-flex-positive: 5;
+          flex-grow: 5;
 }
 
-/* line 59, ../scss/_main.scss */
 .float-fix {
   content: "";
   display: table;
   clear: both;
 }
 
-/* line 5, ../scss/_header.scss */
 .top-head .fl-cell-2 .cont-number {
   font-size: 1.5625rem;
   font-weight: normal;
   text-transform: none;
   margin: 0 30px 5px;
 }
-/* line 10, ../scss/_header.scss */
+
 .top-head .fl-cell-2 .cont-number .city-code {
   color: #666666;
 }
-/* line 15, ../scss/_header.scss */
+
 .top-head .fl-cell-2 .make-call {
   font-size: 1.125rem;
   font-weight: normal;
   text-transform: none;
-  border-bottom: 1px dashed black;
+  border-bottom: 1px dashed #000000;
   margin-bottom: 5px;
 }
-/* line 23, ../scss/_header.scss */
+
 .top-head .row {
-  align-items: flex-end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
-/* line 29, ../scss/_header.scss */
+
 .top-head .fl-cell-1 .row {
-  justify-content: flex-end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
-/* line 33, ../scss/_header.scss */
+
 .top-head .fl-cell-1 .row:first-of-type {
   margin-bottom: 15px;
   color: #666666;
 }
-/* line 38, ../scss/_header.scss */
+
 .top-head .fl-cell-1 .row .border-r-dot {
   padding-right: 5px;
   border-right: 1px dotted #666666;
   margin-right: 5px;
 }
-/* line 44, ../scss/_header.scss */
+
 .top-head .fl-cell-1 .row .fa-shopping-basket {
   color: #c20067;
 }
 
-/* line 1, ../scss/_nav.scss */
 .top-nav {
-  font-size: 0.8125rem;
+  font-size: 0.75rem;
   font-weight: normal;
   text-transform: uppercase;
-  background: black;
+  background: #000000;
   opacity: 0.7;
-  color: white;
+  color: #ffffff;
   margin-top: 10px;
   padding: 10px;
 }
-/* line 10, ../scss/_nav.scss */
+
 .top-nav .fl-cell-1:first-of-type {
-  border-right: 1px dotted white;
+  border-right: 1px dotted #ffffff;
 }
-/* line 14, ../scss/_nav.scss */
+
 .top-nav .top-nav-li li {
   display: inline-block;
   padding: 0 15px;
-}
-/* line 19, ../scss/_nav.scss */
-.top-nav .fl-cell-1:last-of-type {
-  justify-content: flex-end;
+  color: #ffffff;
 }
 
-/* line 25, ../scss/_nav.scss */
+.top-nav .fl-cell-1:last-of-type {
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
 .info {
   background: #f0f0f0;
   color: #666666;
-  padding: 10px;
-  justify-content: center;
+  padding: 5px 10px;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-/* line 31, ../scss/_nav.scss */
+
 .info .fl-cell-1 {
-  flex-direction: column;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   border-right: 1px solid #666666;
-  align-items: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-/* line 38, ../scss/_nav.scss */
-.info .fl-cell-2 a {
+
+.info .fl-cell-1:last-of-type {
+  border-right: none;
+}
+
+.info .fl-cell-1 a {
   padding-left: 10%;
   text-align: center;
 }
-/* line 44, ../scss/_nav.scss */
+
 .info .text-up-b {
   font-size: 0.75rem;
   font-weight: 600;
   text-transform: uppercase;
 }
-/* line 48, ../scss/_nav.scss */
+
 .info .text-up-l {
   font-size: 0.625rem;
   font-weight: normal;
   text-transform: uppercase;
 }
 
-/* line 53, ../scss/_nav.scss */
-.breadcrumb {
+.breadcrumbs-row {
   padding: 5px 0;
+  color: #000000;
 }
-/* line 57, ../scss/_nav.scss */
-.breadcrumb .breadcr li {
+
+.breadcrumbs-row .breadcrumbs li {
   font-size: 0.75rem;
   font-weight: normal;
   text-transform: none;
   float: left;
 }
-/* line 63, ../scss/_nav.scss */
-.breadcrumb .breadcr li + li:before {
+
+.breadcrumbs-row .breadcrumbs li + li:before {
   padding: 0 5px;
   content: '>';
-  color: black;
+  color: #000000;
 }
-/* line 69, ../scss/_nav.scss */
-.breadcrumb .breadcr .active-section {
+
+.breadcrumbs-row .breadcrumbs .breadcrumb-active {
   color: #666666;
 }
 
-/* line 2, ../scss/_filter.scss */
 .filter h2 {
   font-size: 0.75rem;
   font-weight: 600;
@@ -205,80 +215,83 @@ button {
   color: #666666;
 }
 
-/* line 1, ../scss/_sort.scss */
 .sort {
   font-size: 0.625rem;
   font-weight: normal;
   text-transform: none;
   margin: 20px 0 35px;
 }
-/* line 7, ../scss/_sort.scss */
+
 .sort a {
   text-decoration: underline;
 }
-/* line 11, ../scss/_sort.scss */
-.sort .sort-by-delivery {
-  flex-direction: column;
+
+.sort-by-delivery {
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
-/* line 14, ../scss/_sort.scss */
-.sort .sort-by-delivery .items-quantity {
+
+.items-quantity {
   float: left;
   padding-right: 10px;
   margin-right: 10px;
-  border-right: 1px solid black;
+  border-right: 1px solid #000000;
   font-weight: 600;
 }
-/* line 23, ../scss/_sort.scss */
-.sort .sort-by-price {
+
+.sort-by-price {
   text-align: right;
 }
-/* line 26, ../scss/_sort.scss */
-.sort .sort-by-price a:first-of-type {
+
+.sort-by-price a {
   padding-right: 20px;
 }
 
-/* line 1, ../scss/_banner.scss */
+.sort-by-price a:last-of-type {
+  padding-right: 0;
+}
+
 .banner {
-  border: 1px solid black;
+  border: 1px solid #000000;
   padding: 30px 30px;
   background: url(../img/banner.jpg) no-repeat;
   background-size: cover;
 }
-/* line 7, ../scss/_banner.scss */
-.banner h1 {
+
+h1 {
   font-size: 1.5625rem;
   font-weight: 600;
   text-transform: none;
   color: #c20067;
   margin-bottom: 30px;
 }
-/* line 16, ../scss/_banner.scss */
-.banner .section-menu li {
+
+.section-menu li {
   padding-right: 15px;
   line-height: 20px;
   float: left;
   width: 50%;
 }
 
-/* line 1, ../scss/_items.scss */
 .items {
   margin-bottom: 30px;
 }
-/* line 5, ../scss/_items.scss */
+
 .items .fl-cell-1 {
   margin-right: 30px;
   position: relative;
 }
-/* line 9, ../scss/_items.scss */
+
 .items .fl-cell-1:last-of-type {
   margin-right: 0;
 }
-/* line 13, ../scss/_items.scss */
+
 .items .fl-cell-1 .item {
   position: relative;
-  border: 1px solid white;
+  border: 1px solid #ffffff;
 }
-/* line 18, ../scss/_items.scss */
+
 .items .fl-cell-1 .item .img-placeholder {
   height: 450px;
   background-image: url(../img/item.jpeg);
@@ -287,71 +300,87 @@ button {
   margin-bottom: 10px;
   position: relative;
 }
-/* line 26, ../scss/_items.scss */
+
 .items .fl-cell-1 .item .img-placeholder .to-shopping-box {
-  background: linear-gradient(#e86db7, #ba3079);
+  background: linear-gradient(#E86DB7, #ba3079);
   border: none;
   text-transform: uppercase;
-  color: white;
+  color: #ffffff;
   padding: 10px 40px;
   border-radius: 5px;
   position: absolute;
   top: 70%;
   left: 50%;
-  transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
   white-space: nowrap;
   z-index: 0;
   opacity: 0;
 }
-/* line 42, ../scss/_items.scss */
+
 .items .fl-cell-1 .item .img-placeholder .buttons {
   position: absolute;
   top: 70%;
   left: 50%;
-  transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
   z-index: 0;
   opacity: 0;
 }
-/* line 50, ../scss/_items.scss */
+
 .items .fl-cell-1 .item .img-placeholder .buttons .quick-view {
-  background: linear-gradient(#e86db7, #ba3079);
+  background: linear-gradient(#E86DB7, #ba3079);
   border: none;
   text-transform: uppercase;
-  color: white;
+  color: #ffffff;
   border-radius: 5px;
   padding: 10px;
   margin-right: 5px;
-  flex-basis: 0;
-  flex-grow: 1;
+  -webkit-flex-basis: 0;
+      -ms-flex-preferred-size: 0;
+          flex-basis: 0;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
-/* line 62, ../scss/_items.scss */
+
 .items .fl-cell-1 .item .img-placeholder .buttons .to-shop-box {
   background: linear-gradient(#70509b, #42226d);
   border: none;
   text-transform: uppercase;
-  color: white;
+  color: #ffffff;
   border-radius: 5px;
   margin-right: 5px;
   padding: 10px;
-  flex-basis: 0;
-  flex-grow: 1;
+  -webkit-flex-basis: 0;
+      -ms-flex-preferred-size: 0;
+          flex-basis: 0;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
-/* line 74, ../scss/_items.scss */
+
 .items .fl-cell-1 .item .img-placeholder .buttons .to-wishlist {
   background: linear-gradient(#fc92b7, #ce6489);
   border: none;
   text-transform: uppercase;
-  color: white;
+  color: #ffffff;
   border-radius: 5px;
   padding: 10px;
-  flex-basis: 0;
-  flex-grow: 1;
+  -webkit-flex-basis: 0;
+      -ms-flex-preferred-size: 0;
+          flex-basis: 0;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
-/* line 86, ../scss/_items.scss */
+
 .items .fl-cell-1 .item .img-placeholder .to-wish {
-  background: linear-gradient(#e86db7, #ba3079);
+  background: linear-gradient(#E86DB7, #ba3079);
   border: none;
-  color: white;
+  color: #ffffff;
   border-radius: 50%;
   position: absolute;
   right: 1%;
@@ -360,16 +389,18 @@ button {
   opacity: 0;
   padding: 7px;
 }
-/* line 99, ../scss/_items.scss */
+
 .items .fl-cell-1 .item .img-placeholder .item-fast-delivery {
   position: absolute;
   bottom: 0;
   left: 50%;
-  transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
   width: 100%;
   text-align: left;
 }
-/* line 107, ../scss/_items.scss */
+
 .items .fl-cell-1 .item .img-placeholder .item-fast-delivery .item-fast-delivery-icn {
   min-width: 30px;
   min-height: 30px;
@@ -378,15 +409,15 @@ button {
   float: left;
   margin-right: 5px;
 }
-/* line 116, ../scss/_items.scss */
+
 .items .fl-cell-1 .item .img-placeholder .item-fast-delivery .item-delivery-term {
-  font-size: 0.75rem;
+  font-size: 0.625rem;
   font-weight: normal;
   text-transform: none;
   z-index: 0;
-  opacity: 0;
+  display: none;
 }
-/* line 126, ../scss/_items.scss */
+
 .items .fl-cell-1 .item .item-prev-img, .items .fl-cell-1 .item .item-next-img {
   position: absolute;
   left: -25px;
@@ -395,33 +426,34 @@ button {
   height: 75px;
   background: rgba(0, 0, 0, 0.4) url(../img/prev.png) no-repeat center center;
   z-index: 0;
-  opacity: 0;
+  display: none;
   border: none;
 }
-/* line 138, ../scss/_items.scss */
+
 .items .fl-cell-1 .item .item-next-img {
   left: auto;
   right: -25px;
   background: rgba(0, 0, 0, 0.4) url(../img/next.png) no-repeat center center;
 }
-/* line 144, ../scss/_items.scss */
+
 .items .fl-cell-1 .item .item-info {
   min-height: 80px;
   position: relative;
 }
-/* line 148, ../scss/_items.scss */
+
 .items .fl-cell-1 .item .item-info .item-brand {
   font-size: 1rem;
   font-weight: normal;
   text-transform: none;
+  line-height: 10px;
   margin-bottom: 5px;
 }
-/* line 153, ../scss/_items.scss */
+
 .items .fl-cell-1 .item .item-info .item-description {
   color: #666666;
   margin-bottom: 10px;
 }
-/* line 158, ../scss/_items.scss */
+
 .items .fl-cell-1 .item .item-info .item-price {
   font-size: 1rem;
   font-weight: 600;
@@ -430,7 +462,7 @@ button {
   bottom: 0;
   color: #c20067;
 }
-/* line 165, ../scss/_items.scss */
+
 .items .fl-cell-1 .item .item-info .item-price .item-old-price {
   font-size: 0.75rem;
   font-weight: 400;
@@ -439,7 +471,7 @@ button {
   text-decoration: line-through;
   padding-left: 10px;
 }
-/* line 175, ../scss/_items.scss */
+
 .items .fl-cell-1 .item .item-size {
   font-size: 1rem;
   font-weight: 600;
@@ -448,72 +480,93 @@ button {
   z-index: 0;
   opacity: 0;
 }
-/* line 182, ../scss/_items.scss */
+
 .items .fl-cell-1 .item .item-size .item-sizes {
   font-size: 0.75rem;
   font-weight: 600;
   text-transform: none;
-  color: black;
+  color: #000000;
 }
-/* line 192, ../scss/_items.scss */
+
 .items .fl-cell-1:hover .item-box {
   position: absolute;
   width: 117%;
   margin: -25px;
   height: 110%;
-  border: 1px solid black;
+  border: 1px solid #000000;
   box-shadow: 5px 5px 10px #666666;
-  z-index: 10;
+  z-index: 1;
 }
-/* line 203, ../scss/_items.scss */
+
 .items .fl-cell-1:hover .item .to-shopping-box {
   z-index: 1;
   opacity: 1;
 }
-/* line 208, ../scss/_items.scss */
+
+.items .fl-cell-1:hover .item .to-shopping-box:hover {
+  cursor: pointer;
+}
+
 .items .fl-cell-1:hover .item .buttons {
   z-index: 1;
   opacity: 1;
 }
-/* line 213, ../scss/_items.scss */
+
+.items .fl-cell-1:hover .item .buttons button:hover {
+  cursor: pointer;
+}
+
 .items .fl-cell-1:hover .item .to-wish {
   z-index: 1;
   opacity: 1;
+  cursor: pointer;
 }
-/* line 218, ../scss/_items.scss */
+
+.items .fl-cell-1:hover .item .to-wish:hover {
+  cursor: pointer;
+}
+
 .items .fl-cell-1:hover .item .item-fast-delivery {
   background-color: rgba(255, 255, 255, 0.7);
 }
-/* line 221, ../scss/_items.scss */
+
 .items .fl-cell-1:hover .item .item-fast-delivery .item-fast-delivery-icn {
   background-color: initial;
 }
-/* line 225, ../scss/_items.scss */
+
 .items .fl-cell-1:hover .item .item-fast-delivery .item-delivery-term {
   z-index: 1;
-  opacity: 1;
+  display: block;
 }
-/* line 231, ../scss/_items.scss */
+
 .items .fl-cell-1:hover .item .item-next-img, .items .fl-cell-1:hover .item .item-prev-img {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
-  opacity: 1;
+  display: block;
+  cursor: pointer;
 }
-/* line 237, ../scss/_items.scss */
+
 .items .fl-cell-1:hover .item .item-size {
   z-index: 1;
   opacity: 1;
 }
 
-/* line 1, ../scss/_bottom-text.scss */
+.active {
+  color: #c20067 !important;
+}
+
+.under {
+  display: none;
+}
+
 .trends-brands {
   color: #666666;
   background: #f0f0f0;
   padding: 10px 25px;
   margin-bottom: 20px;
 }
-/* line 7, ../scss/_bottom-text.scss */
-.trends-brands h5 {
+
+h5 {
   font-size: 1.25rem;
   font-weight: 800;
   text-transform: uppercase;
@@ -522,86 +575,89 @@ button {
   border-bottom: 1px solid #666666;
   color: #c20067;
 }
-/* line 15, ../scss/_bottom-text.scss */
-.trends-brands h6 {
+
+h6 {
   font-size: 1rem;
   font-weight: 600;
   text-transform: none;
   text-align: center;
   padding: 15px 0;
-  color: black;
+  color: #000000;
 }
-/* line 22, ../scss/_bottom-text.scss */
-.trends-brands p {
+
+p {
   line-height: 18px;
   padding-bottom: 5px;
 }
-/* line 27, ../scss/_bottom-text.scss */
-.trends-brands .bottom-text-str {
+
+.bottom-text-str {
   font-size: 1rem;
   font-weight: 600;
   text-transform: none;
   padding: 10px 0;
 }
-/* line 32, ../scss/_bottom-text.scss */
+
 .trends-brands ul {
   list-style-type: disc;
   list-style-position: inside;
   color: #c20067;
   padding: 0 0 10px 25px;
 }
-/* line 38, ../scss/_bottom-text.scss */
+
 .trends-brands ul li {
   padding-bottom: 5px;
 }
-/* line 41, ../scss/_bottom-text.scss */
+
 .trends-brands ul li:last-of-type {
   padding-bottom: 0;
 }
 
-/* line 1, ../scss/_foot.scss */
-.foot {
+.footer {
   background: #f0f0f0;
   padding: 15px 0 50px;
 }
-/* line 5, ../scss/_foot.scss */
-.foot .fl-cell-1 {
+
+.footer .fl-cell-1 {
   margin-right: 40px;
 }
-/* line 8, ../scss/_foot.scss */
-.foot .fl-cell-1:last-of-type {
+
+.footer .fl-cell-1:last-of-type {
   margin-right: 0;
 }
-/* line 12, ../scss/_foot.scss */
-.foot .fl-cell-1 h5 {
+
+.footer .fl-cell-1 h5 {
+  font-size: 0.875rem;
+  font-weight: bold;
+  text-transform: none;
   color: #333333;
-  line-height: 30px;
+  text-align: left;
+  line-height: 5px;
   border-bottom: 1px solid #666666;
-  margin-bottom: 10px;
+  margin: 10px 0;
 }
-/* line 19, ../scss/_foot.scss */
-.foot .fl-cell-1 .foot-menu {
+
+.footer-menu {
   font-size: 0.75rem;
   font-weight: normal;
   text-transform: none;
   color: #666666;
   line-height: 16px;
 }
-/* line 26, ../scss/_foot.scss */
-.foot .fl-cell-1 .foot-menu-social {
+
+.footer-menu-social {
   margin-top: 10px;
 }
-/* line 29, ../scss/_foot.scss */
-.foot .fl-cell-1 .foot-menu-social li {
+
+.footer-menu-social li {
   float: left;
   margin-right: 10px;
 }
-/* line 33, ../scss/_foot.scss */
-.foot .fl-cell-1 .foot-menu-social li:last-of-type {
+
+.footer-menu-social li:last-of-type {
   margin-right: 0;
 }
-/* line 37, ../scss/_foot.scss */
-.foot .fl-cell-1 .foot-menu-social li a img {
+
+.footer-menu-social li a img {
   width: 30px;
   height: 30px;
 }
