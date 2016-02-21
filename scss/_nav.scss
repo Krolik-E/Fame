@@ -1,5 +1,5 @@
 .top-nav {
-	@include text-st(13px, normal, uppercase);
+	@include text-st(12px, normal, uppercase);
 
 	background: $main-color;
 	opacity: 0.7;
@@ -14,6 +14,7 @@
 	.top-nav-li li {
 			display: inline-block;
 			padding: 0 15px;
+			color: $title-color;
 		}
 
 	.fl-cell-1:last-of-type {
@@ -25,49 +26,54 @@
 .info {
 	background: $main-add-color;
 	color: $text-color;
-	padding: 10px;
+	padding: 5px 10px;
 	justify-content: center;
+}
 
-	.fl-cell-1 {
-		flex-direction: column;
-		border-right: 1px solid $text-color;
-		align-items: center;
+.info-cell {
+	flex-direction: column;
+	border-right: 1px solid $text-color;
+	align-items: center;
+	text-align: center;
+
+	&:last-of-type {
+		border-right: none;
 	}
 
-	.fl-cell-2 {
-		a {
-			padding-left: 10%;
-			text-align: center;
-		}
-	}
-
-	.text-up-b {
-		@include text-st(12px, 600, uppercase);
-	}
-
-	.text-up-l {
-		@include text-st(10px, normal, uppercase);
+	a {
+		padding-left: 10%;
+		text-align: center;
 	}
 }
 
-.breadcrumb {
+.text-up-b {
+	@include text-st(12px, 600, uppercase);
+	text-align: center;
+}
+
+.text-up-l {
+	@include text-st(10px, normal, uppercase);
+}
+
+.breadcrumbs-row {
 	padding: 5px 0;
-	
-	.breadcr {
-		li {
-			@include text-st(12px);
+	color: $main-color;
+}
 
-			float: left;
-		}
+.breadcrumbs {
+	li {
+		@include text-st(12px);
 
-		li + li:before {
-			padding: 0 5px;
-			content: '>';
-			color: $main-color;
-		}
-
-		.active-section {
-			color: $text-color;
-		}
+		float: left;
 	}
+
+	li + li:before {
+		padding: 0 5px;
+		content: '>';
+		color: $main-color;
+	}
+}
+
+.breadcrumb-active {
+	color: $text-color;
 }

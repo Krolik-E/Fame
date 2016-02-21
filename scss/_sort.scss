@@ -7,24 +7,27 @@
 	a {
 		text-decoration: underline;
 	}
+}
 
-	.sort-by-delivery {
-		flex-direction: column;
+.sort-by-delivery {
+	flex-direction: column;
+}
+.items-quantity {
+	float: left;
+	padding-right: 10px;
+	margin-right: 10px;
+	border-right: 1px solid $main-color;
+	font-weight: 600;
+}
 
-		.items-quantity {
-			float: left;
-			padding-right: 10px;
-			margin-right: 10px;
-			border-right: 1px solid $main-color;
-			font-weight: 600;
-		}
-	}
+.sort-by-price {
+	text-align: right;
 
-	.sort-by-price {
-		text-align: right;
+	a {
+		padding-right: 20px;
 
-		a:first-of-type {
-			padding-right: 20px;
+		&:last-of-type {
+			padding-right: 0;
 		}
 	}
 }

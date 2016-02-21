@@ -4,42 +4,54 @@ each val in buttons
 	div.row.items
 		- var n = 3
 		while n > 0
-			div.fl-cell-1
+			div.fl-cell-1.items-row
 				- n--
 				div.item-box
 				div.item
 					div.img-placeholder
-						unless val.row
+						if val.row
 							div.row.buttons
 								each value, key in val.buttons
-									if val.type
-										button( type='button', class = key, data-action=val.type )
-											if val.type == 'color' 
-												i( class=value )
+									if key==='color'
+										each i, btn in value
+											button( type='button', class = btn, data-action=key )
+												i( class=i )
+							
+									else 
+										if key==='fill'
+											each i, btn in value
+												button( type='button', class = btn, data-action=key )
+													each icon in i
+														i( class= icon )
+
+										else
+											if val.type==='text'
+												button( type='button', class = key )
+													| #{value}
 											else
-												if key !== 'to-wishlist'
+												button( type='button', class = key )
 													i( class=value )
-												else
-													each icn in value
-														i( class= icn )
-									else if !type
-										button( type='button', class = key )
-											| #{value}
-						else if val.row
+						else if !val.row
 							each value, key in val.buttons
-									if val.type
-										button( type='button', class = key, data-action=val.type )
-											if val.type == 'color'
-												i( class=value )
+								if key==='color'
+									each i, btn in value
+										button( type='button', class = btn, data-action=key )
+											i( class=i )
+						
+								else 
+									if key==='fill'
+										each i, btn in value
+											button( type='button', class = btn, data-action=key )
+												each icon in i
+													i( class= icon )
+
+									else
+										if val.type==='text'
+												button( type='button', class = key )
+													| #{value}
 											else
-												if key !== 'to-wish'
+												button( type='button', class = key )
 													i( class=value )
-												else
-													each icn in value
-														i( class= icn )
-									else if !type
-										button( type='button', class = key )
-											| #{value}
 						div.item-fast-delivery
 							div( class=items[0].features.icon )
 							p.item-delivery-term

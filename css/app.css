@@ -155,7 +155,7 @@ button {
           justify-content: center;
 }
 
-.info .fl-cell-1 {
+.info-cell {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
@@ -163,24 +163,26 @@ button {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
 }
 
-.info .fl-cell-1:last-of-type {
+.info-cell:last-of-type {
   border-right: none;
 }
 
-.info .fl-cell-1 a {
+.info-cell a {
   padding-left: 10%;
   text-align: center;
 }
 
-.info .text-up-b {
+.text-up-b {
   font-size: 0.75rem;
   font-weight: 600;
   text-transform: uppercase;
+  text-align: center;
 }
 
-.info .text-up-l {
+.text-up-l {
   font-size: 0.625rem;
   font-weight: normal;
   text-transform: uppercase;
@@ -191,20 +193,20 @@ button {
   color: #000000;
 }
 
-.breadcrumbs-row .breadcrumbs li {
+.breadcrumbs li {
   font-size: 0.75rem;
   font-weight: normal;
   text-transform: none;
   float: left;
 }
 
-.breadcrumbs-row .breadcrumbs li + li:before {
+.breadcrumbs li + li:before {
   padding: 0 5px;
   content: '>';
   color: #000000;
 }
 
-.breadcrumbs-row .breadcrumbs .breadcrumb-active {
+.breadcrumb-active {
   color: #666666;
 }
 

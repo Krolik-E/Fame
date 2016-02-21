@@ -3,44 +3,44 @@
 	background: $main-add-color;
 	padding: 10px 25px;
 	margin-bottom: 20px;
+}
 
-	h5 {
-		@include text-st(20px, 800, uppercase);
-		text-align: center;
-		padding-bottom: 15px;
-		border-bottom: 1px solid $text-color;
-		color: $sec-color;
-	}
+h5 {
+	@include text-st(20px, 800, uppercase);
+	text-align: center;
+	padding-bottom: 15px;
+	border-bottom: 1px solid $text-color;
+	color: $sec-color;
+}
 
-	h6 {
-		@include text-st(16px, 600);
-		text-align: center;
-		padding: 15px 0;
-		color: $main-color;
-	}
+h6 {
+	@include text-st(16px, 600);
+	text-align: center;
+	padding: 15px 0;
+	color: $main-color;
+}
 
-	p {
-		line-height: 18px;
+p {
+	line-height: 18px;
+	padding-bottom: 5px;
+}
+
+.bottom-text-str {
+	@include text-st(16px, 600);
+	padding: 10px 0;
+}
+
+.trends-brands ul {
+	list-style-type: disc;
+	list-style-position: inside;
+	color: $sec-color;
+	padding: 0 0 10px 25px;
+
+	li {
 		padding-bottom: 5px;
-	}
 
-	.bottom-text-str {
-		@include text-st(16px, 600);
-		padding: 10px 0;
-	}
-
-	ul {
-		list-style-type: disc;
-		list-style-position: inside;
-		color: $sec-color;
-		padding: 0 0 10px 25px;
-
-		li {
-			padding-bottom: 5px;
-
-			&:last-of-type {
-				padding-bottom: 0;
-			}
+		&:last-of-type {
+			padding-bottom: 0;
 		}
 	}
 }

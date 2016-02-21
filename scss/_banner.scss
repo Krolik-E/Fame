@@ -3,21 +3,21 @@
 	padding: 30px 30px;
 	background: url(../img/banner.jpg) no-repeat;
 	background-size: cover;
+}
 
-	h1 {
-		@include text-st(25px, 600);
+h1 {
+	@include text-st(25px, 600);
 
-		color: $sec-color;
-		margin-bottom: 30px;
-	}
+	color: $sec-color;
+	margin-bottom: 30px;
+}
 
-	.section-menu {
+.section-menu {
 
-		li {
-			padding-right: 15px;
-			line-height: 20px;
-			float: left;
-			width: 50%;
-		}
+	li {
+		padding-right: 15px;
+		line-height: 20px;
+		float: left;
+		width: 50%;
 	}
 }

@@ -1,7 +1,5 @@
-.filter {
-	h2 {
-		@include text-st(12px, 600, uppercase);
+.filter h2 {
+	@include text-st(12px, 600, uppercase);
 
-		color: $text-color;
-	}
+	color: $text-color;
 }

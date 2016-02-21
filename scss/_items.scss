@@ -114,10 +114,10 @@
 					}
 
 					.item-delivery-term {
-						@include text-st(12px);
+						@include text-st(10px);
 						
 						z-index: 0;
-						opacity: 0;
+						display: none;
 					}
 
 				}
@@ -131,7 +131,7 @@
 				height: 75px;
 				background: rgba(0, 0, 0, 0.4) url(../img/prev.png) no-repeat center center;
 				z-index: 0; 
-				opacity: 0;
+				display: none;
 				border: none;
 			}
 
@@ -147,6 +147,7 @@
 
 				.item-brand {
 					@include text-st(16px);
+					line-height: 10px;
 					margin-bottom: 5px;
 				}
 
@@ -196,23 +197,36 @@
 				height: 110%;
 				border: 1px solid $main-color;
 				box-shadow: 5px 5px 10px $text-color;
-				z-index: 10;
+				z-index: 1;
 			}
 			.item {
 
 				.to-shopping-box {
 					z-index: 1;
 					opacity: 1;
+
+					&:hover {
+						cursor: pointer;
+					}
 				}
 
 				.buttons {
 					z-index: 1;
 					opacity: 1;
+
+					button:hover {
+						cursor: pointer;
+					}
 				}
 
 				.to-wish {
 					z-index: 1;
 					opacity: 1;
+					cursor: pointer;
+
+					&:hover {
+						cursor: pointer;
+					}
 				}
 
 				.item-fast-delivery {
@@ -224,14 +238,15 @@
 
 					.item-delivery-term {
 						z-index: 1;
-						opacity: 1;
+						display: block;
 					}
 				}
 
 				.item-next-img, .item-prev-img {
-					background-color: rgba(0, 0, 0, 0.4);
+					background-color: rgba(0, 0, 0, 0.5);
 					z-index: 1;
-					opacity: 1;
+					display: block;
+					cursor: pointer;
 				}
 
 				.item-size {
@@ -241,6 +256,14 @@
 			}
 		}
 	}
+}
+
+.active {
+	color: $sec-color !important;
+}
+
+.under {
+	display: none;
 }
 
 

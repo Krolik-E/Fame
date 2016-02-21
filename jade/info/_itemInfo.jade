@@ -11,15 +11,15 @@
 -
 	var buttons = [
 	{'buttons': {'to-shopping-box': 'В корзину'},
-	'row': 'false'},
-	{'buttons': {'quick-view': 'Быстрый обзор', 'to-shop-box': 'В корзину', 'to-wishlist': 'В wishlist'}},
-	{'buttons': {'quick-view': 'fa fa-search-plus fa-2x', 'to-shop-box': 'fa fa-shopping-bag fa-2x', 'to-wishlist': 'fa fa-heart fa-2x'},
-	'type': 'color'},
-	{'buttons': {'quick-view': 'fa fa-search fa-2x', 'to-shop-box': 'fa fa-shopping-cart fa-2x', 'to-wishlist': ['fa fa-thumbs-o-up fa-2x', 'fa fa-2x fa-thumbs-up under']},
-	'type': 'fill'},
-	{'buttons': {'quick-view': 'fa fa-search fa-2x', 'to-shop-box': 'fa fa-shopping-cart fa-2x', 'to-wishlist': 'fa fa-star fa-2x'},
-	'type': 'color'},
-	{'buttons': {'to-wish': ['fa fa-heart-o', 'fa fa-heart under']},
-	'type': 'fill',
-	'row': 'false'}
+	'type': 'text'},
+	{'buttons': {'quick-view': 'Быстрый обзор', 'to-shop-box': 'В корзину', 'to-wishlist': 'В wishlist'},
+	'type': 'text',
+	'row': 'true'},
+	{'buttons': {'quick-view': 'fa fa-search-plus fa-2x', 'to-shop-box': 'fa fa-shopping-bag fa-2x', 'color': {'to-wishlist': 'fa fa-heart fa-2x'}},
+	'row': 'true'},
+	{'buttons': {'quick-view': 'fa fa-search fa-2x', 'to-shop-box': 'fa fa-shopping-cart fa-2x', 'fill': {'to-wishlist': ['fa fa-thumbs-o-up fa-2x', 'fa fa-2x fa-thumbs-up under']}},
+	'row': 'true'},
+	{'buttons': {'quick-view': 'fa fa-search fa-2x', 'to-shop-box': 'fa fa-shopping-cart fa-2x', 'color': {'to-wishlist': 'fa fa-star fa-2x'}},
+	'row': 'true'},
+	{'buttons': {'fill': {'to-wish': ['fa fa-heart-o', 'fa fa-heart under']}}}
 	]
